@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Quản trị người dùng</h2>
+  <button onclick="logout()">Đăng xuất</button>
+
+  <h3>Thêm người dùng</h3>
+  <form id="addUserForm">
+    <input type="text" id="name" placeholder="Họ tên" required>
+    <input type="email" id="newEmail" placeholder="Email" required>
+    <input type="text" id="role" placeholder="Vai trò" required>
+    <button type="submit">Thêm</button>
+  </form>
+
+  <h3>Danh sách người dùng</h3>
+  <table border="1" id="userTable">
+    <thead>
+      <tr>
+        <th>Họ tên</th>
+        <th>Email</th>
+        <th>Vai trò</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
